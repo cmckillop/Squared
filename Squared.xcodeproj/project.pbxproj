@@ -80,6 +80,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A556F7751EBE08F100B8446D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		A556F7761EBE090E00B8446D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A556F7791EBE099900B8446D /* Background */,
+				A556F7751EBE08F100B8446D /* Player */,
+				A556F7781EBE095400B8446D /* Scene */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A556F7771EBE094000B8446D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		A556F7781EBE095400B8446D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		A556F7791EBE099900B8446D /* Background */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Background;
+			sourceTree = "<group>";
+		};
+		A556F77A1EBE09AB00B8446D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		A56CA5D31E9C0AEB002C81F5 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +148,9 @@
 		A56CA5DE1E9C0AEB002C81F5 /* Squared */ = {
 			isa = PBXGroup;
 			children = (
+				A556F7761EBE090E00B8446D /* Controllers */,
+				A556F77A1EBE09AB00B8446D /* Data */,
+				A556F7771EBE094000B8446D /* Scenes */,
 				A56CA5DF1E9C0AEB002C81F5 /* AppDelegate.swift */,
 				A56CA5E11E9C0AEB002C81F5 /* GameScene.sks */,
 				A56CA5E31E9C0AEB002C81F5 /* Actions.sks */,
@@ -528,6 +576,7 @@
 				A56CA60C1E9C0AEB002C81F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A56CA60D1E9C0AEB002C81F5 /* Build configuration list for PBXNativeTarget "SquaredTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +585,7 @@
 				A56CA60F1E9C0AEB002C81F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A56CA6101E9C0AEB002C81F5 /* Build configuration list for PBXNativeTarget "SquaredUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +594,7 @@
 				A56CA6121E9C0AEB002C81F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
