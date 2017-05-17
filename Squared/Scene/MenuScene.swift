@@ -92,8 +92,6 @@ class MenuScene: SKScene
                 let generator = UIImpactFeedbackGenerator(style: .light)
                 generator.impactOccurred()
                 
-                print("Touched instructions")
-                
                 if let scene = InstructionsScene(fileNamed: "InstructionsScene")
                 {
                     // Set the scale mode to scale to fit the window
