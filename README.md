@@ -1,2 +1,2 @@
 # Squared
-Squared² is a 2D, adventure platform game for iOS.
+Squared² is a 2D, endless runner game for iOS.

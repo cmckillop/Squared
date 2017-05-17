@@ -2,7 +2,7 @@
 //  GameViewController.swift
 //  Squared
 //
-//  Created by Conor McKillop on 10/04/2017.
+//  Created by Conor McKillop on 06/05/2017.
 //  Copyright © 2017 Conor McKillop. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
         
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
-        if let scene = GameScene(fileNamed: "GameScene") {
+        if let scene = MenuScene(fileNamed: "MenuScene") {
                 
             // Set the scale mode to scale to fit the window
             scene.scaleMode = .aspectFill
@@ -27,13 +27,19 @@ class GameViewController: UIViewController {
                 view.presentScene(scene)
                 
                 view.ignoresSiblingOrder = true
-                
-                view.showsFPS = true
-                view.showsNodeCount = true
-                view.showsPhysics = true
             }
         }
     }
+    
+    // Fix for 3d Touch Related 'touchesBegan' delay: http://stackoverflow.com/questions/19799961/
+    override func viewDidAppear(_ animated: Bool) {
+        let window = view.window!
+        let gr0 = window.gestureRecognizers![0] as UIGestureRecognizer
+        let gr1 = window.gestureRecognizers![1] as UIGestureRecognizer
+        gr0.delaysTouchesBegan = false
+        gr1.delaysTouchesBegan = false
+    }
+
 
     override var shouldAutorotate: Bool {
         return true
